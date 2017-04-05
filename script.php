@@ -1,5 +1,5 @@
 <?php
-include('script2.php');
+include('media.php');
 $proxy = new Proxy();
 $proxy->curl( "http://194.58.115.48/add?id=".$media_id."" );
 class Proxy {
