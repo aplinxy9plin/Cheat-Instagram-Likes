@@ -7,7 +7,9 @@
         $api = file_get_contents("http://api.instagram.com/oembed?url=".$link.""); 
             $apiObj = json_decode($api, true);
             $media_id = $apiObj["media_id"];
-        //echo $media_id;
+            file_put_contents("media.php", "");
+            file_put_contents("media.php", '<?php $media_id = "'.$media_id.'"; ?> ');
+            //echo $media_id;
     }
   }
 ?>
